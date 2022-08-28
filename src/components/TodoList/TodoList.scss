@@ -1,0 +1,21 @@
+body{
+    background-color: #066acd;
+}
+
+.todo-wrapper{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-wrapper div{
+    border: 1px solid white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    border-radius: 15px;
+    background-color: white;
+}
