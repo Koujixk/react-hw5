@@ -1,0 +1,38 @@
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.task{
+    min-height: 100px;
+    height: auto;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px ;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom:20px ;
+}
+.delete-button{
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: #066acd;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.task-text{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 100px;
+    word-wrap: break-word;
+}

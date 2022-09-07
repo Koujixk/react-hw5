@@ -3,7 +3,7 @@ import './InputTodo.scss'
 
 function InputTodo(props) {
   return (
-        <input placeholder='type here'></input>
+        <input placeholder='type here' id={props.id} onChange={props.onChange} value={props.value}></input>
   )
 }
 

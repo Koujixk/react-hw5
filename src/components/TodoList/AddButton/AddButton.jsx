@@ -3,7 +3,7 @@ import './AddButton.scss'
 
 function AddButton(props) {
   return (
-    <button onClic={props.onClicked}>Add</button>
+    <button onClick={props.onClicked}>Add</button>
   )
 }
 
