@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuid } from 'uuid';
 
 import AddButton from './AddButton/AddButton'
 import InputTodo from './InputTodo/InputTodo'
@@ -16,18 +16,19 @@ function TodoList(props) {
     const addingTodo = () => {
         const value = {
             title: currentValue,
-            id: uuidv4()
+            id: uuid()
         }
         const values = [...tasks, value] 
         setCurrentValue('')
-        if (value) {
+        if (value.title) {
             setTasks(values)
         } else{
             alert("You can't add empty string")
         }
     }
-    const DeletingTodo = () => {
-        console.log('work')
+    const DeletingTodo = (id) => {
+        const deletedTask = tasks.filter(el => el.id !== id)
+        setTasks(deletedTask)
     }
 
     return (
